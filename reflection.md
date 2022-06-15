@@ -285,4 +285,4 @@ public class RhMethod {
   }
 }
 ```
-到这里，我们的反射工具类设计基本完成了，当然了，还有构造方法、静态方法和静态变量等的实现，本文就不再讲解了，原理上是一样的，具体的实现可以查看 [项目源码](https://github.com/RoseHong/RoseHong/tree/main/core/src/main/java/com/xxh/rosehong/utils/res)。Enjoy it!
+到这里，我们的反射工具类设计基本完成了，当然了，还有构造方法、静态方法和静态变量等的实现，本文就不再讲解了，原理上是一样的，具体的实现可以查看 [项目源码](https://github.com/RoseHong/RoseHong/tree/main/core/src/main/java/com/xxh/rosehong/utils/ref)。Enjoy it!
