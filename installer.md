@@ -441,5 +441,6 @@ protected R newResult(F filter, int match, int userId) {
 
 里面的逻辑认真看一下还是比较好懂的，大概就是通过匹配到的` actionsFilter`(这里是` ActivityIntentInfo`列表)进行一些条件帅选之后，将符合要求的通过调用` newResult`对` ResolveInfo`进行实例化，很显然上面的`newResult`必然会被其子类重写，有兴趣可以看看`ActivityIntentResolver.newResult`的实现，大概就是对`ResolveInfo`的实例化并且对其属性进行填充。
 
-### 实现过程
+### 总结
 
+考虑到` Android`的碎片化较为严重的问题，于是我们需要尽可能地去把各个功能都重新实现一片，除非其重构难度比较大，我们再考虑直接反射进行调用，当然能够直接被反射调用肯定是少不了关键成员变量的替换了。对于安装器来说，其实现难度并不大，所以我们优先考虑对其进行实现，具体实现过程，我们将在下一章来进行讲解。Enjoy it!s
